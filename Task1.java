@@ -7,7 +7,7 @@ public class Task1 {
         int m = 0;
 
         while (n < 1 || m < 1) {
-            System.out.print("Введите 2 числа через пробела: ");
+            System.out.print("Введите 2 числа через пробел: ");
             Scanner scanner = new Scanner(System.in);
             String[] n_m = scanner.nextLine().split(" ");
             try {
