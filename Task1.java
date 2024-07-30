@@ -1,5 +1,3 @@
-package com.github.dhmel;
-
 import java.util.Scanner;
 
 public class Task1 {
@@ -9,14 +7,14 @@ public class Task1 {
         int m = 0;
 
         while (n < 1 || m < 1) {
-            System.out.print("Введите 2 целых положительных числа через пробел: ");
+            System.out.print("Введите 2 числа через пробела: ");
             Scanner scanner = new Scanner(System.in);
             String[] n_m = scanner.nextLine().split(" ");
             try {
                 n = Integer.parseInt(n_m[0]);
                 m = Integer.parseInt(n_m[1]);
             } catch (ArrayIndexOutOfBoundsException | NumberFormatException e) {
-                System.out.println("Некорректный ввод");
+                System.out.println("Неправильный ввод. Ошибка.");
             }
         }
 
